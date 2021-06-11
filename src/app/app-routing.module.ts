@@ -11,6 +11,46 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'electricidad',
+    loadChildren: () => import('./electricidad/electricidad.module').then( m => m.ElectricidadPageModule)
+  },
+  {
+    path: 'plomeria',
+    loadChildren: () => import('./plomeria/plomeria.module').then( m => m.PlomeriaPageModule)
+  },
+  {
+    path: 'cerrajeria',
+    loadChildren: () => import('./cerrajeria/cerrajeria.module').then( m => m.CerrajeriaPageModule)
+  },
+  {
+    path: 'pintura',
+    loadChildren: () => import('./pintura/pintura.module').then( m => m.PinturaPageModule)
+  },
+  {
+    path: 'aire-acondicionado',
+    loadChildren: () => import('./aire-acondicionado/aire-acondicionado.module').then( m => m.AireAcondicionadoPageModule)
+  },
+  {
+    path: 'ventaneria',
+    loadChildren: () => import('./ventaneria/ventaneria.module').then( m => m.VentaneriaPageModule)
+  },
+  {
+    path: 'albanileria',
+    loadChildren: () => import('./albanileria/albanileria.module').then( m => m.AlbanileriaPageModule)
+  },
+  {
+    path: 'herreria',
+    loadChildren: () => import('./herreria/herreria.module').then( m => m.HerreriaPageModule)
+  },
+  {
+    path: 'linea-blanca-reparacion',
+    loadChildren: () => import('./linea-blanca-reparacion/linea-blanca-reparacion.module').then( m => m.LineaBlancaReparacionPageModule)
+  },
+  {
+    path: 'reparacion-y-servicios-informaticos',
+    loadChildren: () => import('./reparacion-y-servicios-informaticos/reparacion-y-servicios-informaticos.module').then( m => m.ReparacionYServiciosInformaticosPageModule)
+  },
 ];
 
 @NgModule({
